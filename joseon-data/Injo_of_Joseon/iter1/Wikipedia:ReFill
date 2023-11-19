@@ -1,0 +1,69 @@
+toolforge:refillThis page is a soft redirect.
+
+reFill (formerly Reflinks) is a tool that expands bare URL references semi-automatically, hosted on Toolforge. It adds information (page title, work/website, author and publication date, if metadata is included) to bare URL references, and does additional fixes as well (e.g. combining duplicated references). The tool is written in Python and licensed under Simplified BSD License. The tool is an open-source replacement of Dispenser's Reflinks. The source code is available on GitHub. The templates created automatically by the tool need to be reviewed to ensure that they are accurate, as they are often not.
+
+Tagging bare URLs for cleanup
+If there is a particular article which contains bare URLs in the references, like this one, and you would like to request a Wikipedian that already has reFill installed (and is familiar with how it works) to help you fix the problem:
+
+Open the article in question in your browser
+Click the 'edit' button
+Paste the following line into the very top of the article:         {{Cleanup bare URLs}}
+Click the 'preview' button to verify that your change did not interfere with any other parts of the article
+Click the 'save' buttonThis will display a visible message (the text of which is shown at the top of Template:Cleanup bare URLs) at the top of the Wikipedia article, and will also add the article to a hidden category which requests that a Wikipedian experienced with reFill, apply it to the bare URLs in that article. As of January 2023 there were over 88,000 articles tagged as needing such attention from a volunteer, so don't hold your breath!
+
+To use reFill yourself
+https://refill.toolforge.org/ – Paste the title of the article into the Page name textbox. You can choose to output plain CS1 citations or {{cite web}} templates. There is also a newer interface at https://refill.toolforge.org/ng/.
+
+Options
+Use plain formatting instead of {{cite web}}: If selected, the tool will fill out bare references in plain CS1 format instead of {{cite web}}. All available metadata is included.
+Do not remove link rot tags: If selected, the tool will not remove any link rot tags from the source, even if no bare references are skipped.
+Add blank metadata fields when the information is unavailable If selected, the tool will insert blank |author= and/or |date= for filling in manually, when the corresponding metadata is unavailable.
+Do not add access dates: If selected, access dates will be omitted from the result.
+Use the base domain name as work when this information cannot be parsed: If selected, the base domain of the link will be used in the |website= field if the website does not supply its name in embedded metadata.
+
+Toolbox link
+Insert this code into your common.js:
+
+mw.loader.load( "https://meta.wikimedia.org/w/index.php?title=User:Zhaofeng_Li/Reflinks.js&action=raw&ctype=text/javascript" );
+
+Bookmarklet
+javascript:options='defaults=y&nowatch=y';location.href='https://tools.wmflabs.org/refill/result.php?wiki='+mw.config.get('wgContentLanguage')+'&page='+encodeURIComponent(mw.config.get('wgPageName'))+'&'+options;
+
+API
+An API is available, enabling user script and bot developers to take advantage of the APIs exposed by reFill to complete bare references programmatically.
+
+ReFill is not perfect, and never will be. You are responsible for every edit that ReFill 2 suggests so you must take the time to inspect every citation that this tool creates and fix anything that isn't quite right. Do not make work for other editors to clean up. Some publications misuse the HTML metadata tags that ReFill extracts such as:
+
+the author name (first= and last=) containing the name of the publication e.g. first=Deutsche|last=Welle (www.dw.com) representing Deutsche Welle, rather than the author's name, or first=Editorial|last=team
+the title including metadata elements that shouldn't be in the title, e.g. Kosovo MPs elect lawyer Vjosa Osmani as president &amp;#124; DW &amp;#124; 04.04.2021 – the title here is "Kosovo MPs elect lawyer Vjosa Osmani as president" and the text that follows it – such as the article's date – should be stripped out and a date= element added if not already present.You'll need to remove these issues yourself.
+ReFill extracts the date from the date meta tag. On some web pages there isn't such a meta tag, but the date can easily be found at the top of the body of the page. ReFill will not find it, but you can add it manually.
+
+ReFill2 is based on Citoid which is maintained by the Wikimedia Foundation. Citoid depends on technology called Zotero, which is the bit that actually extracts metadata from web pages. Zotero uses hundreds of 'translators' which contain JavaScript code that knows how to extract useful metadata from different layouts of web page, particularly academic resources. Wikipedia:Citing sources with Zotero explains how to use Zotero yourself, enabling you to get closer to how the metadata is extracted.
+This is the same way that the 'Cite' button on the toolbar of Wikipedia's visual editor works.
+
+When ReFill encounters a bare URL which is an archive site, such as in this example:
+
+it writes the archive URL to the deprecated archiveurl parameter rather than the newer archive-url parameter
+adds the discontinued deadurl=y rather than the current url-status=dead parameter
+does not add the mandatory archive-date parameterYou will need to fix such references yourself manually to avoid an error showing in red in the references section. If your edit results in such an error, please fix it. The archive date can be found embedded in Wayback Machine links.If using an editor that supports global replace, archiveurl can be globally replaced by archive-url and deadurl=y by url-status=dead.
+When combining duplicate references, if one of them is already named, pointers to that name's reference are not updated when the name is changed.
+CAPTCHA pages should be ignored.
+
+If the tool is stuck displaying "waiting for an available worker", use this link to raise a report to get it restarted. You will need to register for a Phabricator account, which you will be able to link to your Wikipedia account. Fill in the description field and hit the "Create New Task" button.
+If you have found a bug or want extra features, please post to the talk page. Alternatively, you can also create an issue on GitHub.
+
+Having no Wikimedia Cloud Services dependency, reFill can be installed on your own computer so that you can work on it. To contribute to reFill, create a fork on reFill's GitHub repository, make your changes and submit a pull request. Note that refill on toolforge uses the labs-stable branch. Thank you for your contributions!
+Volunteers are needed to help support and maintain reFill. If you are a software developer with experience in Python, Celery and Node.js and you are willing to help to any extent then please leave a message.
+To translate the tool, please head over to translatewiki.net.
+
+Citation Style 1, the style of citation generated by reFill
+CiteGen, a companion add-on for Chrome and Firefox that generates references
+User:Dispenser/Reflinks, the original tool by Dispenser
+Wikipedia:The Wikipedia Library/Citoid
+Web2Cit
+
+Userbox
+{{User:UBX/reFill}}
+
+Tech Talk: Automated citations in Wikipedia: Citoid and the technology behind it on YouTube, explains how this works
+List of Zotero translators at GitHub

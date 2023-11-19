@@ -1,0 +1,83 @@
+An edit summary is a brief explanation of an edit to a Wikipedia page. Summaries help other editors by (a) providing a reason for the edit, (b) saving the time to open up the edit to find out what it's all about, and (c) providing information about the edit on diff pages and lists of changes (such as page histories and watchlists). 
+According to the consensus policy: All edits should be explained (unless the reason for them is obvious)—either by clear edit summaries, or by discussion on the associated talk page. To add a summary, type in the text entry field in the Edit summary box located near the bottom of the Editing page. The box looks like this:
+
+It is a good practice to provide a meaningful summary for every edit, especially when reverting (undoing) the actions of other editors or deleting existing text; otherwise, people may question your motives for the edit. In appropriate circumstances, a summary can be quite brief ("ce" and "rvv" for example).
+Accurate summaries help other contributors decide whether they want to review an edit, and to understand the change should they choose to review it. Edits that do not have an edit summary are more likely to be reverted incorrectly, because it may not be obvious what the purpose of the edit was. Editors should not revert an otherwise good edit because of a missing or confusing edit summary; good editors may simply have forgotten, or a confusing edit summary may have been the result of an autofill mishap. (If the edit summary itself violates privacy or other policies, see the Fixing section below.) However, realistically, when a major edit (e.g., addition or deletion of a substantial amount of article text, or a substantial rewrite) doesn't have an edit summary, some busy editors might not assume good faith and revert the change without evaluating it properly. Providing an edit summary helps prevent that kind of error. 
+Summaries are less important for minor changes (which means generally unchallengeable changes, such as spelling or grammar corrections), but a brief note like "fixed spelling" is helpful even then. 
+To avoid accidentally leaving edit summaries blank, registered editors can select "Prompt me when entering a blank edit summary" on the Editing tab of the user preferences.
+
+Summarize. Summarize the change, even if only briefly; even a short summary is better than no summary.
+Explain. Give reasons for the change, if you think other editors may be unclear as to why you made it. If you believe a Wikipedia policy or guideline justifies the change then you may include a link to it in your explanation.
+Abbreviations. Abbreviations should be used with care. They can be confusing for new contributors. For an explanation of some commonly used abbreviations, see this edit summary legend.
+Expand on important information. Readers who see only the summary might not get the entire picture. Prevent misunderstanding: If an edit requires more explanation than will fit in the summary box, post a comment to the article's talk page to give more information, and include "see talk" or "see discussion page" in the edit summary.
+If you are copying text within Wikipedia, you must at least put a link to the source page in the edit summary at the destination page.
+Talk pages. When editing talk pages, consider reflecting the gist of your comment in the edit summary; this allows users to check Recent changes, Page history and User contributions (see below) very efficiently.
+
+What to avoid in edit summaries
+Avoid misleading summaries. Mentioning one change but not another one can be misleading to someone who finds the other one more important. You could add something like "and misc." to cover the other changes.
+Avoid vagueness. While edit summaries can be terse, they should still be specific. Providing an edit summary similar to "I made some changes" is functionally equivalent to not providing a summary at all.
+Avoid long summaries. Edit summaries are not for explaining every detail, writing essays about "the truth", or long-winded arguments with fellow editors. For discussions, you should use the talk page.
+Avoid inappropriate summaries. You should explain your edits, but without being overly critical or harsh when editing or reverting others' work. This may be perceived as uncivil, and cause resentment or conflict. Explain what you changed, citing the relevant policies, guidelines, or principles of good writing, but do not target others in a way that may come across as a personal attack.
+Avoid incivility. Snide comments, personal remarks about editors, and other aggressive edit summaries are explicit edit-summary "don'ts" of the Wikipedia Civility policy.Warning: be careful of what you write in edit summaries. Inappropriate edit summaries may be used as evidence against you in behavioral complaints. This applies particularly to uncivil and deliberately misleading edit summaries.
+
+Use of edit summaries in disputes
+Proper use of edit summaries is critical to resolving content disputes. Edit summaries should accurately and succinctly summarize the nature of the edit, especially if it could be controversial. If the edit involves reverting previous changes, it should be marked as a revert ("rv") in the edit summary.
+Avoid using edit summaries to carry on debates or negotiation over the content. This creates an atmosphere where the only way to carry on discussion is to revert other editors! If you notice this happening, start a section on the talk page and place your comments there. This keeps discussions and debates away from the article page itself. For example:
+
+reverted edits by User:Example, see talk for rationaleAs with any other Wikipedia space, do not express opinions of other users in edit summaries.
+
+Fixing
+After you publish the page, you cannot change the edit summary, so be careful with it, particularly if you are in a heated content dispute – do not write things you will regret.
+If you make an important omission or error in an edit summary, you can correct this by making a dummy edit (a change in the page with no visible effects), and adding further information in the dummy edit's summary.
+In the extreme case of an edit summary containing certain kinds of harmful content, the summary can be deleted on request. They may be removed from public view by administrators using revision deletion; such edit summaries remain visible to administrators. In even more limited circumstances, the entire edit may be oversighted, leaving it and its edit summary visible only to the handful of users with the Oversight permission.
+
+Limited to 500 characters. The edit summary box can hold one line of approximately 500 characters. If you attempt to type or paste more, only the first 500 will be displayed – the rest will be discarded. For example, attempting to add 10 new characters (at the end or in between) to a summary already containing 495 characters may result in the first 5 new characters being inserted and the final 5 being disregarded.
+Show preview. The "Show preview" button also provides a preview of the edit summary to facilitate checking links.
+Can't be changed after saving. After you publish the page, you cannot change the edit summary (see Phabricator tasks T12105 and T15937).
+Doesn't appear in searches. The built-in search function cannot search edit summaries, and they are not indexed by external search engines.
+Wikilinks always rendered; other wikitext coding ignored. Edit summaries render internal links, including piped links, and interwiki links, even when enclosed within <nowiki>...</nowiki> tags. Therefore, copying wikitext in the edit summary box may be preferable to copying text from the preview, except when one wants to save space. Other wikitext coding is not interpreted. Although URLs do not produce clickable links, a wikilink with Special:Diff/ can make clickable diffs, and Special:PermaLink/ can make permanent links. ~~~~ has no effect, so do not sign edit summaries.
+You can mention (or "ping") a user in your edit summary. To mention the user "Example" you need to type: [[User:Example]] anywhere in the edit summary.
+
+Places where the edit summary appears
+The edit summary appears in black italics in the following places:
+
+Page history – list of changes to the page you edited
+User contributions – list of all your edits
+Watchlist – list of recent changes to watched pages (logged-in users only)
+Diff page – shows the difference between two edits
+Permanent link – shows an old version of a page
+Recent changes – list of all recent edits
+Wikipedia IRC channels – real-time list of all edits
+Related changes – list of recent changes to pages linked to the page you edited
+List of new pages – shows the edit summary of the creation.The source text of the edit summary can be seen at en.wikipedia.org/w/api.php?action=query&prop=revisions&rvprop=comment&revids=id, where id is the revision number. For example, [1] says diff=845523983 in the url so revids=845523983 shows the edit summary source. The link uses mw:API:Revisions, which is mainly intended for programs.
+
+Notes
+Section editing
+When adding a new section to a discussion page with the "new section" button, the section title is used as the edit summary. When editing an existing section, the section title is inserted at the beginning of the edit summary, enclosed with /* and */ marks, for example /* External links */. Details of the edit should be added after this text. 
+When viewing such an edit summary, the section name will appear in blue, with a small arrow next to it: →External links. Click the arrow or section name to view the section (if the section no longer exists, the link will simply take you to the top of the page).
+If you create a new section before or after an existing section by clicking a section "edit" link, delete the text between /* and */ marks (or change it to the new section title) to avoid confusion.Note: Tools that track edit summary usage by a user (such as XTools) do not consider the auto-added part as a summary; that's any part within /* and */. You're encouraged to provide real edit summary, whether the editbox contains such auto-summary or not.
+
+Automatic summaries
+In certain circumstances, an automatic summary is generated when an edit is published without one. This is slightly different from the summary added when editing a section, as that can be modified by the user before saving.
+Except for the automatic summary when creating a redirect, which usually says all that needs to be said, these are not a substitute for a proper edit summary – you should always leave a meaningful summary, even in the above cases. They are, however, useful in providing some context for edits made by inexperienced users who are not aware of the importance of edit summaries, and for spotting vandalism.
+When starting a new thread on a talk page by using the "New section" tab, the text you type into the "subject/headline" field becomes both the heading of your discussion topic, and the edit summary for that edit.
+
+Tags
+Tags (i.e., edit tags) are brief messages that the software automatically places next to certain edits in histories, recent changes and other special pages. They are implemented by the edit filter to help assist vandalism patrollers and other page watchers. They cannot be added or removed manually.
+
+There are standard templates for warning editors who delete content without providing an edit summary: {{Uw-delete1}} (which assumes good faith) and {{Uw-delete2}} (which doesn't). {{Uw-editsummary}} is available for notifying users who have not provided an edit summary for other types of edits; {{Summary2}} works better for more experienced users who need to be reminded rather than taught. These are available via Twinkle.
+When editors run for adminship, their RfA pages include statistics about how often they have provided edit summaries in the past.
+A user's edit summary usage can be checked with this tool.(example)If you are a registered user and want to show your commitment to always leaving edit summaries, which will remind other users of the importance of doing so, you can use any of the following userboxes:
+
+The 500-character limit
+The limit of 500 characters is an approximation. The actual limit is 500 Unicode codepoints. Most characters occupy one codepoint, but some characters like those with diacritics or emojis may consist of more than one codepoint. The limit of 500 codepoints includes the section title marker (and the associated /*  */) and also any wiki markup that may be present. 
+For editors who have JavaScript enabled, there is a script included with the page that monitors the codepoint-length of the summary and prevents entering summaries longer than 500 codepoints (both in "Edit source" and in Visual editor). A count is displayed at the right-hand end of the text entry field, showing the number of unused codepoints. When JavaScript is disabled, this safeguard can't function and the only protection is the browser's limit of 500 characters, which may overflow the 500-codepoint limit as a result of any characters that are represented by more than one codepoint.
+When the edit is done by a bot, through an external tool (such as WP:AWB) or through some user script or gadget, it's the responsibility of the tool or script to safeguard against overflowing this limit. In any situation where more than 500 codepoints are entered for the edit summary, the summary is truncated to 500 codepoints when the page is published.
+
+Wikipedia:Edit summary legend – commonly used edit summary abbreviations
+Wikipedia:Added or removed characters
+Wikipedia:Red flags in edit summaries
+Wikipedia:What does "per" mean?
+Help:Deletion summary
+How to respond to a "no consensus" edit summary
+User Edit Summary Search This tool will search through a user's edit summaries and return edits with a partial match as a .CGI file.

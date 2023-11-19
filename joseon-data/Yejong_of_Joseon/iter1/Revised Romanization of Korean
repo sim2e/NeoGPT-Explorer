@@ -1,0 +1,49 @@
+Revised Romanization of Korean (국어의 로마자 표기법; Gugeoui Romaja Pyogibeop; lit. "Roman-letter notation of the national language") is the official Korean language romanization system in South Korea. It was developed by the National Academy of the Korean Language from 1995 and was released to the public on 7 July 2000 by South Korea's Ministry of Culture and Tourism in Proclamation No. 2000-8.The new system addressed problems in the implementation of the McCune–Reischauer system, such as the phenomena where different consonants and vowels became indistinguishable in the absence of special symbols. To be specific, under the McCune–Reischauer system, the consonants ㄱ (k), ㄷ (t), ㅂ (p) and ㅈ (ch) and ㅋ (k'), ㅌ (t'), ㅍ (p') and ㅊ (ch') became indistinguishable when the apostrophe was removed. In addition, the vowels ㅓ (ŏ) and ㅗ (o), as well as ㅡ (ŭ) and ㅜ (u), became indistinguishable when the breve was removed. Especially in internet use, where omission of apostrophes and breves is common, this caused confusion.
+
+Features
+These are notable features of the Revised Romanization system:
+
+The aspiration distinction between consonants is represented in a new way. The unaspirated consonants ㄱ, ㄷ, ㅂ, and ㅈ are represented as ⟨g⟩, ⟨d⟩, ⟨b⟩, and ⟨j⟩ respectively. The aspirated consonants ㅋ, ㅌ, ㅍ, and ㅊ are represented as ⟨k⟩, ⟨t⟩, ⟨p⟩, ⟨ch⟩. These letter pairs have a similar aspiration distinction in English at the beginning of a syllable (though they also have a voicing distinction unlike Korean); this approach is also used by Hanyu Pinyin. By contrast, the McCune–Reischauer system uses ⟨k⟩ ⟨t⟩ ⟨p⟩ ⟨ch⟩ both for the unaspirated and aspirated consonants, adding an apostrophe for the aspirated versions (⟨k'⟩ ⟨t'⟩ ⟨p'⟩ ⟨ch'⟩). (The McCune–Reischauer system also includes voicing, which the revised romanization does not.)
+When placed in the final position, ㄱ, ㄷ, and ㅂ are romanized as ⟨k⟩, ⟨t⟩, and ⟨p⟩ respectively, as they are neutralized to unreleased stops: 벽 [pjʌk̚] → byeok, 밖 [pak̚] → bak, 부엌 [pu.ʌk̚] → bueok, 벽에 [pjʌ.ɡe] → byeoge, 밖에 [pa.k͈e] → bakke, 부엌에 [pu.ʌ.kʰe] → bueoke, 입 [ip̚] → ip,  입에 [i.be] → ibe.
+Vowels ㅓ and ㅡ are written as ⟨eo⟩ and ⟨eu⟩ respectively, replacing the ⟨ŏ⟩ and ⟨ŭ⟩ of the McCune–Reischauer system.
+However, ㅝ /wʌ/ is written as ⟨wo⟩, not ⟨weo⟩, and ㅢ /ɰi/ is written as ⟨ui⟩, not ⟨eui⟩.
+ㅅ in the syllable-initial position is always written as ⟨s⟩. The McCune–Reischauer system used ⟨sh⟩ or ⟨s⟩ depending on context.
+When followed by another consonant or when in the final position, it is written as ⟨t⟩: 옷 [ot̚] → ot (but 옷에 [o.se] → ose).
+ㄹ /l/ is ⟨r⟩ before a vowel or a semivowel and ⟨l⟩ everywhere else: 리을 [ɾi.ɯl] → rieul, 철원 [tɕʰʌ.ɾwʌn] → Cheorwon, 울릉도 [ul.lɯŋ.do] → Ulleungdo, 발해 [paɾ.ɦɛ] → Balhae. Like in McCune–Reischauer, ㄴ /n/ is written ⟨l⟩ whenever pronounced as a lateral rather than as a nasal consonant: 전라북도 [tɕʌl.la.buk̚.t͈o] → Jeollabuk-do
+Phonological changes are reflected where ㄱ, ㄷ, ㅂ and ㅈ are adjacent to ㅎ: 좋고 → joko, 놓다 → nota, 잡혀 → japyeo, 낳지 → nachi.
+However, aspirated sounds are not reflected in case of nouns where ㅎ follows ㄱ, ㄷ and ㅂ: 묵호 → Mukho, 집현전 → Jiphyeonjeon.In addition, special provisions are for regular phonological rules in exceptions to transcription (see Korean phonology).
+Other rules and recommendations include the following:
+
+A hyphen optionally disambiguates syllables: 가을 → ga-eul (fall; autumn) versus 개울 → gae-ul (stream). Official publications usually do not make use of this provision (and actual instances of ambiguity among names are rare).
+However, a hyphen must be used in a linguistic transliteration (not transcription) to denote syllable-initial ㅇ except at the beginning of a word: 없었습니다 → eobs-eoss-seubnida, 외국어 → oegug-eo
+It is permitted to hyphenate syllables in a given name. Certain phonological changes, ordinarily indicated in other contexts, are ignored in names, for better disambiguating between names: 강홍립 → Gang Hongrip or Gang Hong-rip (not *Hongnip or Hong-nip), 한복남 → Han Boknam or Han Bok-nam (not *Bongnam or Bong-nam)
+However, this does not guarantee perfect reversibility. For example, given names 빛나 and 샛별 are romanized as Bitna and Saetbyeol respectively – syllable-final consonants ㅊ and ㅅ both become t.
+Administrative units (such as the do) are hyphenated from the placename proper: 강원도 → Gangwon-do
+One may omit terms such as 시, 군, 읍: 평창군 → Pyeongchang-gun or Pyeongchang, 평창읍 → Pyeongchang-eup or Pyeongchang.
+However, names for geographic features and artificial structures are not hyphenated: 설악산 → Seoraksan, 해인사 → Haeinsa
+Proper nouns are capitalized.
+
+Transcription rules
+Vowels
+Consonants
+ㄱ, ㄷ, ㅂ and ㄹ are transcribed as g, d, b and r when placed at the initial of a word or before a vowel, and as k, t, p and l when followed by another consonant or when appearing at the end of a word.
+
+Usage
+In South Korea
+Almost all road signs, names of railway and subway stations on line maps and signs, etc. have been changed according to Revised Romanization of Korean (RR, also called South Korean or Ministry of Culture (MC) 2000). It is estimated to have cost at least 500 billion won to 600 billion won (US$500–600 million) to carry out this procedure. All Korean textbooks, maps and signs to do with cultural heritage were required to comply with the new system by 28 February 2002. Romanization of surnames and existing companies' names has been left untouched because of the reasons explained below. However, the Korean government recommends using the revised romanization of Korean for the new names.
+
+Exceptions
+Like several European languages that have undergone spelling reforms (such as Portuguese, German, Polish or Swedish), the Revised Romanization is not expected to be adopted as the official romanization of Korean family names (example I, Bak, Gim, Choe instead of Lee, Park, Kim, Choi which are used commonly). However, South Korea's Ministry of Culture, Sports and Tourism recommends those who "newly" register their romanized names to follow the Revised Romanization of Korean.
+In addition, North Korea continues to use a version of the McCune–Reischauer system of romanization, a different version of which was in official use in South Korea from 1984 to 2000.
+
+See also
+Romanization of Korean
+Korean Pronunciation, Help:IPA/Korean
+
+References
+External links
+
+Romanization of Korean from the National Institute of Korean Language
+Korean Romanization Converter by Pusan National University
+software online: lexilogos words' converter Hangul to Latin alphabet
+Culture Ministry sets guideline for Romanizing Korean names

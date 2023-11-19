@@ -1,0 +1,48 @@
+Many articles in English Wikipedia have been added or expanded by translating information from articles from other languages' Wikipedias. This page discusses the methods, considerations, and templates for translating those articles or requesting such.
+
+If there is an article on another language's Wikipedia about a topic not yet covered by an article here, and you would like to translate it yourself, see the procedures and conditions at Help:Translation. You may also improve an existing article here with content translated from another Wikipedia. The same conditions regarding acknowledging the source apply as for a full translation.
+Requesting a translation from another language's Wikipedia into English is easy.
+
+If the English article already exists (but a translation would be useful because the article in the other language is of higher quality, or includes additional information):
+simply place a translation template from the category Category:Expand by language Wikipedia templates on the English article page. For example, to request improvement of the English article on Fuerteventura, based on the equivalent article on Spanish Wikipedia, place {{Expand Spanish|Fuerteventura}} on the English article Fuerteventura.
+If the English article does not yet exist:
+you can:
+create a starter article (at least a stub) in English, using the process described at Your first article;
+once you have created the article, tag it with a translation template, as mentioned above.
+or
+add a page request red link in the Requested articles Project section with the proposed title of the article which will contain the translation adding an interwiki link to the other language's Wikipedia page(s). Note that fewer people will likely see a request created using this method.
+or
+ask a translator directly on their talk page, by taking a look at the list of available translators or the category of available translators.In all cases, articles must meet the relevant notability criteria and other guidelines applicable to articles on the English-language Wikipedia. Each Wikipedia has its own standards, and the acceptance of an article's topic or of any part of its content in one language is no guarantee that it will be accepted in another.Note that this page is not for requesting translations of copyrighted sources outside Wikipedia. It is also not for articles currently in English Wikipedia that are not in English. For that, please see Wikipedia:Pages needing translation into English.
+
+Articles needing translation
+Category:Articles needing translation from foreign-language Wikipedias contains all articles that have been tagged to suggest that they be expanded with content from another language's Wikipedia translated into English. Browse the appropriate language category to find an article you are interested in.
+Tools like this one can locate articles that may need translation by finding articles in other languages with no interwiki link to English, but interwiki links to several other languages.
+A translation is a derivative work. Wikipedia articles are under a copyleft license that requires attribution to the original source and authors in all derivative works. How to do this is described in Help:Translation.
+
+Translations of an article on English Wikipedia into some other language are covered at Wikipedia:Translate us.
+For translations between two non-English languages, see the versions of this page in one or other of those languages – each Wikipedia has its own standards and conventions for such translations.
+
+When an article makes use of images from Wikimedia Commons that have text that needs to be translated, such as for diagrams or figures, the request for translation can be made at Commons:Requests for translation, following which the image can be listed at the Wikipedia:Graphics Lab for inserting the translated text.
+
+Wikipedia welcomes the involvement of students in article editing. Article translation is particularly well-suited to student involvement. Such efforts provide useful, real-world translation experience for students, who will be motivated by the fact that their work will be seen by thousands of Wikipedia readers. They also benefit Wikipedia readers, who gain access to information about other cultures and peoples. For assistance setting up a classroom translation project, please see Wikipedia:Student assignments.
+
+{{User Translator}} indicates your willingness to participate in this project through translation, copy editing, or other ways.
+
+After putting this template on a userpage, the page will be added to the appropriate subcategory of Category:Available translators in Wikipedia. When the proofreader attribute is set to 'yes', the page will also be added to a subcategory of Category:Available proofreaders in Wikipedia.
+{{User Translator 2}} works in the same way in the other direction (from English to another language).
+
+Category:Wikipedia translation templates
+EASE Guidelines for Authors and Translators of Scientific Articles
+Category:Multilingual websites (Editors who translate articles between different versions of Wikipedia can use some of these websites for references.)
+Machine translation
+Template:Notenglish-section
+Wikipedia:Basic copyediting, a task commonly following translation
+Wikipedia:Pages needing translation into English, for pages on the English Wikipedia that will shortly be deleted unless translated
+Wikipedia:Translating German Wikipedia
+Wikipedia:Translators available
+Wikipedia:WikiProject Cross-language Editing and Learning Exchange
+Wikipedia:WikiProject Translation studies
+Wikipedia:WikiProject Intertranswiki, translating content from non-English Wikipedias
+wikt:Wiktionary:Translations
+m:Translation of the week
+MediaWiki translation on translatewiki.net, a localisation platform for translation communities, language communities, and open source projects

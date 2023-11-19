@@ -1,0 +1,106 @@
+== Function summary ==
+This bot was originally designed to add digital object identifiers (DOIs) to references; it now does much more, adding other identifiers (PMIDs, ISBNs), links to open access repositories, and fixing common formatting errors.
+The bot obtains citation data from a range of sources including Google Books, Google Books API Family, CrossRef, AdsAbs, arXiv, oaDOI and PubMed.  Because scraping data from web pages is unreliable and resource-intensive, these databases are the main source of data; unfortunately the bot is unable to tell when these databases contain errors or incomplete information.  Any such error or omission should be reported directly to the data repository maintainer.  The bot also corrects citations to match WP:CITALICSRFC and similar.  Note that a 503 error means that the bot is overloaded and you should try again later – wait at least an hour.
+
+Data sources
+arXiv data is from arXiv of course.
+Bibcode data is from the Astrophysics Data System.
+doi data is expanded using CrossRef.
+Google Books is used for Google Books URL expansion.
+ISBN, LCCN, and OLCN data is expanded from the Google Books API Family.
+JSTOR data is expanded using Citoid, which then queries jstor.com.
+PMC and PMID data comes from and is expanded from PubMed.
+Wikipedia's Citoid based upon Zotero for generic URL expansion.  Only works with some URLs: for example PDFs are not expanded.Open source links are from mostly oaDOI.
+
+Development
+A stable version of the bot is always available at https://citations.toolforge.org/
+Time commitments preclude regular updates; maintenance is attempted every few months. The source code can be found at https://github.com/ms609/citation-bot.
+
+Interpreting bot edit summaries
+The bot edit summaries try to strike a balance between providing too little information to be useful and so much information as to exceed the line limits and to just duplicate the edit content itself.  Sometimes the edit summary will include items that did not occur in the final edit because multiple actions cancelled each other out. Also, if a URL is removed, then the edit summary might say that other things (such as access-date) were removed because there was no URL, even though there was originally a URL: this is because the bot works in phases.
+
+Stopping the bot from editing
+To prevent Citation bot from editing a particular page, add the following text anywhere on the page {{bots|deny=Citation bot}}
+To prevent Citation bot from editing a specific citation, add a comment to the citation template before the first |, such as {{cite journal <!-- Citation bot bypass--> |last=Smith |first=John |year=2018 |...}}If the bot is erroneously adding or modifying a parameter (e.g. adding a wrong |last=/|first=, or a wrong |doi=) to a citation), put a comment in place of the appropriate parameter such as |doi = <!-- Citation bot adds wrong DOI-->Although the content of the comment is not relevant to the Citation Bot, it is best to include some text within the comment so that human editors understand why there is a comment.  Also, it makes it clear why, such if the comment was "Citation bot grabs invalid issue number from pubmed", then a human might know that they too should not believe pubmed.  Lastly, random empty comments are prone to being deleted by human editors as "extraneous".
+It may be possible to fix the underlying problem if you report the error – but there are a few, rare instances (such as false positives and editor preference) where it is impossible to implement an automatic fix.
+
+False positives
+If the bot is adding seemingly-unrelated data to a citation, it is probably receiving a false positive from the citation databases it consults.  Unfortunately, there's no way for the bot to know this, so there are two ways of avoiding it:
+
+Change the citation template to one which the bot doesn't modify, such as cite news, etc;
+Add a comment into one or more of the parameters – these comments will not be over-ridden by the bot, and will reduce the chance of the citation databases throwing false positives.
+If the journal title has non-standard casing (Such as PLOS One), then special code should be requested on the bug report page, or better yet, make a pull request on https://github.com/ms609/citation-bot/blob/master/constants.php
+
+Page numbers with hyphens
+The bot replaces hyphens with en dash in page number ranges.  On rare occasions when a hyphen is right and an en dash is wrong (hyphen in the page number itself, often because the page number includes the chapter too), manually use the {{hyphen}} template instead of the dash/hyphen character. An alternative is to use the template's |at= parameter.
+
+Valid parameters
+The bot draws all parameters specified in Module:Citation/CS1/Whitelist with the format "['parameter_name'] = true", and treats these as valid spellings.   The bot maintains its own copy at https://github.com/ms609/citation-bot/blob/master/constants/parameters.php
+
+Internationalization
+There have been a number of requests for the bot to be adapted to foreign-language wikipedias.  When time permits, I will be happy to work towards this.  For me to adapt the bot for a foreign wiki I first need:
+
+A valid bot account on that wiki with the appropriate permission for its edits
+A translation of each of the template names and parameters used.If you have both of these available, please let me know and I will set to work on the necessary coding.
+
+Function
+Automatic or manually Assisted: Automatic
+Programming language(s): PHP
+Function summary: Maintains and expands citations; ensures standards are complied to.
+Edit period(s): Can run in a continuous mode that automatically revisits articles, but currently used on specific articles whenever requested by a user.
+Function details:
+
+Replaces "id=identifier" or "url=http://resource.org/identifier=# with "identifier=#"
+Fixes common typos in parameter names (not values), using the closest match if the typo is not in a list of frequent mistakes https://github.com/ms609/citation-bot/blob/master/constants/parameters.php
+Removes redundant parameters
+Searches for missing parameters (including URL), then adds them if available. This is especially convenient when only an identifier is included within the template
+The bot uses a range of databases including Google Books API, Google Books, PubMed, CrossRef, AdsAbs, doi.org, and JSTOR
+Converts an endnote citation to a Wikipedia citation — Example
+Is authorized to, but not currently add names to references and combine duplicates
+Expands {{cite arXiv}} templates with an eprint parameter, and updates them to use {{cite journal}} where appropriate
+Where a mixture of {{citation}} and {{cite xxx}} family templates are used in an article, is authorized to standardize to the dominant format, but does not currently do that
+Convert bare references to citation template based references
+
+User box you can add to show support
+Bot approval
+Wikipedia:Bots/Requests for approval/DOI bot: Adds DOIs to citations provided using {{cite journal}}
+Wikipedia:Bots/Requests for approval/DOI bot 2: Add missing parameters to citations from CrossRef database, and tidy citations
+Wikipedia:Bots/Requests for approval/DOI bot 3: Replace hyphens with en-dashes in page number ranges
+This request was denied with rationale: "If there is consensus for changing it your bot is already approved to do so"
+Wikipedia:Bots/Requests for approval/Citation bot 4: Where pages use a mixture of 'citation' and 'cite journal' templates (which produce different output styles), use the dominant template in all cases
+Wikipedia:Bots/Requests for approval/Citation bot 5: Change 'Cite ArXiV' to 'Cite Journal' where appropriate
+Wikipedia:Bots/Requests for approval/Citation bot 6: Add names to anonymous reference tags
+Wikipedia:Bots/Requests for approval/Citation bot 7: Facilitate the addition of references by adding ref tags where requested.
+Wikipedia:Bots/Requests for approval/Citation bot 8: Convert bare URLs to "Cite journal" or "Citation" templates – Conversion of URL citations, including work on bare URLs, duplicate URLs for online sources and identifiers (like JSTOR, bibcode and ASIN).
+Wikipedia:Bots/Requests for approval/Citation bot 9: Perform null edits to update category membership
+There have been other discussions on various citation, general Wikipedia, and citation template related pages over the years that reached various levels of consensus. The bot also relied on those as guidance.
+
+External links
+Github version
+
+See also – Other great tools to use
+Wikipedia:reFill is a tool that handles many bare URLs that this does not.
+Wikipedia:OA bot automatically suggests the most suitable open access links for existing DOI citations.
+Wikipedia:RefToolbar is a series of JavaScript/jQuery scripts that help editors add citation templates to articles.
+Wikipedia:Unreliable/Predatory Source Detector – A script designed to highlight citations to unreliable/predatory sources.
+
+Bot Recognitions
+This kitten is  Fixed
+Vivian
+Kashment (talk) 20:51, 20 July 2014 (UTC)
+ Martin (Smith609 – Talk) 05:13, 29 July 2014 (UTC)
+
+A barnstar for you!
+당신을 위한 반스타!
+A barnstar for you!
+A barnstar for you!
+A barnstar for you!
+:)
+A goat friend for a bot, why not?
+Cobrafang (talk) 13:25, 30 May 2022 (UTC)
+
+A barnstar for you!
+A barnstar for you!
+
+
+== A barnstar for you! ==

@@ -2,7 +2,7 @@ from neo4j import GraphDatabase
 
 host = 'bolt://neo4j:7687'
 user = 'neo4j'
-password = 'pleaseletmein'
+password = 'sojongabcd'
 driver = GraphDatabase.driver(host, auth=(user, password))
 
 
